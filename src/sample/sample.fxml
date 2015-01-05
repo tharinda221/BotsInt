@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="700.0" stylesheets="@../../Style/Buttons.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button id="start" fx:id="start" layoutX="531.0" layoutY="38.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="57.0" text="START" />
+            <TableView fx:id="table" layoutX="-1.0" layoutY="95.0" prefHeight="180.0" prefWidth="333.0">
+              <columns>
+                <TableColumn fx:id="ip" prefWidth="133.0" text="IP Address" />
+                <TableColumn fx:id="count" prefWidth="109.0" text="Failed Attempts" />
+                  <TableColumn fx:id="time" minWidth="0.0" prefWidth="90.0" text="Time" />
+              </columns>
+            </TableView>
+            <Text layoutX="46.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log File Location" wrappingWidth="257.671875">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <TextField fx:id="log" layoutX="271.0" layoutY="42.0" prefHeight="25.0" prefWidth="220.0" />
+            <Text layoutX="197.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blocking SSH Bots">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <TableView fx:id="table1" layoutX="345.0" layoutY="95.0" prefHeight="180.0" prefWidth="333.0">
+               <columns>
+                  <TableColumn fx:id="ip1" prefWidth="133.0" text="IP Address" />
+                  <TableColumn fx:id="count1" prefWidth="109.0" text="Failed Attempts" />
+                  <TableColumn fx:id="time1" minWidth="0.0" prefWidth="90.0" text="Time" />
+               </columns>
+            </TableView>
+            <Text layoutX="90.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Failed Attempts IPs">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="411.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Failed Attempts Subnets">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TableView fx:id="table2" layoutX="-2.0" layoutY="298.0" prefHeight="180.0" prefWidth="333.0">
+               <columns>
+                  <TableColumn fx:id="ip2" prefWidth="236.0" text="Blocked IPs" />
+                  <TableColumn fx:id="time2" minWidth="0.0" prefWidth="95.0" text="Time" />
+               </columns>
+            </TableView>
+            <TableView fx:id="table3" layoutX="345.0" layoutY="298.0" prefHeight="180.0" prefWidth="333.0">
+               <columns>
+                  <TableColumn fx:id="ip3" prefWidth="236.0" text="Blocked Subnets" />
+                  <TableColumn fx:id="time3" minWidth="0.0" prefWidth="95.0" text="Time" />
+               </columns>
+            </TableView>
+            <TableView fx:id="table4" layoutX="-2.0" layoutY="501.0" prefHeight="180.0" prefWidth="333.0">
+               <columns>
+                  <TableColumn fx:id="ip4" prefWidth="236.0" text="Unblocked IPs" />
+                  <TableColumn fx:id="time4" minWidth="0.0" prefWidth="95.0" text="Time" />
+               </columns>
+            </TableView>
+            <TableView fx:id="table5" layoutX="344.0" layoutY="501.0" prefHeight="180.0" prefWidth="333.0">
+               <columns>
+                  <TableColumn fx:id="ip5" prefWidth="236.0" text="Unblocked Subnets" />
+                  <TableColumn fx:id="time5" minWidth="0.0" prefWidth="95.0" text="Time" />
+               </columns>
+            </TableView>
+            <Text layoutX="111.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blocked IPs">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="421.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blocked Subnets">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="105.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unblocked IPs">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="422.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unblocked Subnets">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
